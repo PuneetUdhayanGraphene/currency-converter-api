@@ -3,11 +3,15 @@ from ..database.models import CurrencyDatabaseModel
 
 db = get_db()
 
-db.query(CurrencyDatabaseModel).get()
+items = db.query(CurrencyDatabaseModel).get()
 
 def get_currencies():
     """Gagandeep"""
-    pass
+    currencyList = []
+    for i in items:
+        currencyList.append(i.name)
+    return currencyList
+    
 
 def get_converted_amount():
     """Vaishnavi"""
