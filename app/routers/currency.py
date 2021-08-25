@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from ..currencyconverter import currency_converter
 
 router = APIRouter()

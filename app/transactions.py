@@ -1,5 +1,5 @@
-from database import get_db
-from database.models import CurrencyDatabaseModel
+from .database import get_db
+from .database.models import CurrencyDatabaseModel
 
 
 class DatabaseQuery:
