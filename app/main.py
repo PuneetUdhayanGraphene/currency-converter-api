@@ -4,8 +4,8 @@ from fastapi import FastAPI
 from .routers import currency
 
 app = FastAPI(
-    title="Cuurency conversion API",
-    description="Covert currencies.",
+    title="Currency conversion API",
+    description="Covert currencies",
     version="0.0.1",
 )
 
