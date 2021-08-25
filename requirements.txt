@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+azure-cosmos
+azure-storage-queue
+pytest
+coverage
