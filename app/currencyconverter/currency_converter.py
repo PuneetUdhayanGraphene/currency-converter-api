@@ -1,9 +1,5 @@
-from ..database import get_db
-from ..database.models import CurrencyDatabaseModel
+from ..transactions import DatabaseQuery
 
-db = get_db()
-
-items = db.query(CurrencyDatabaseModel).get()
 
 def get_currencies():
     """Gagandeep"""
@@ -13,6 +9,8 @@ def get_currencies():
     return currencyList
     
 
-def get_converted_amount():
-    """Vaishnavi"""
-    pass
+
+def get_converted_amount(amount, from_currency, to_currency):
+
+    database_query = DatabaseQuery()
+    return database_query.get_converted_amount(amount, from_currency, to_currency)
