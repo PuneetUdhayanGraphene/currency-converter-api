@@ -7,7 +7,7 @@ from .routers import currency
 app = FastAPI(
     title="Currency conversion API",
     description="Covert currencies",
-    version="0.0.1",
+    version="0.0.2",
 )
 
 origins = [
